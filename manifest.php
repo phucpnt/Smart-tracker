@@ -64,11 +64,6 @@ $installdefs = array (
       'from' => '<basepath>/SugarModules/modules/Campaigns/Tracker.php',
       'to' => 'custom/modules/Campaigns/Tracker.php',
     ),
-	1 => 
-	array (
-      'from' => '<basepath>/SugarModules/include/MVC/Controller/entry_point_registry.php',
-      'to' => 'custom/include/MVC/Controller/entry_point_registry.php',
-    ),
   ),
   'language' => 
   array (
