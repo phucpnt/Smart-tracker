@@ -52,7 +52,7 @@ $manifest = array (
       'name' => 'Smart Tracker',
       'published_date' => '2011-11-29 08:00:00',
       'type' => 'module',
-      'version' => '1.1.0',
+      'version' => '1.2.0',
       'remove_tables' => 'prompt',
 );
 $installdefs = array (
