@@ -95,6 +95,7 @@ if(preg_match('/^[0-9A-Za-z\-]*$/', $track))
 	);
 
 	$first_variable = true;
+	$remoteQuery = array();
 
 	//We add in the URL all the custom variables coming from the template
 	foreach($_REQUEST as $key => $val){
@@ -102,10 +103,11 @@ if(preg_match('/^[0-9A-Za-z\-]*$/', $track))
 			if($first_variable){
 				$redirect_URL .= "?";
 			}
-			$redirect_URL .= $key."=".$val."&";
+			$remoteQuery[$key] = $val;
 			$first_variable = false;
 		}
 	}
+	$redirect_URL .= http_build_query($remoteQuery);
 
 //END - ADDITION
 
